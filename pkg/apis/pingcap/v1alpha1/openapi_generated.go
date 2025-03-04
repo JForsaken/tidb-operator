@@ -13777,6 +13777,12 @@ func schema_pkg_apis_pingcap_v1alpha1_TiKVStorageConfig(ref common.ReferenceCall
 				Description: "TiKVStorageConfig is the config of storage",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
+					"enable-ttl": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"boolean"},
+							Format: "",
+						},
+					},
 					"max-key-size": {
 						SchemaProps: spec.SchemaProps{
 							Type:   []string{"integer"},

@@ -242,7 +242,7 @@ tidy: ## Run go mod tidy and verify the result
 ##@ Release
 
 docker-release:
-	docker buildx build --platform linux/amd64,linux/arm64 --push -t "$(DOCKER_REPO)/tidb-operator:$(IMAGE_TAG)" --build-arg "GOPROXY=$(shell go env GOPROXY)" --build-arg "LDFLAGS=$(LDFLAGS)" -f images/tidb-operator/Dockerfile.new .
+	docker buildx build --platform linux/amd64 --push -t "$(DOCKER_REPO)/tidb-operator:$(IMAGE_TAG)" --build-arg "GOPROXY=$(shell go env GOPROXY)" --build-arg "LDFLAGS=$(LDFLAGS)" -f images/tidb-operator/Dockerfile.new .
 
 .PHONY: check check-setup build e2e-build e2e gocovmerge test docker e2e-docker debug-build-docker
 

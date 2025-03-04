@@ -23863,6 +23863,17 @@ bool
 <tbody>
 <tr>
 <td>
+<code>enable-ttl</code></br>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
 <code>max-key-size</code></br>
 <em>
 int64
