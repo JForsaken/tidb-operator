@@ -23874,6 +23874,17 @@ bool
 </tr>
 <tr>
 <td>
+<code>ttl-check-poll-interval</code></br>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
 <code>max-key-size</code></br>
 <em>
 int64

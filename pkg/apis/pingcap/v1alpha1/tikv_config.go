@@ -555,8 +555,8 @@ type TiKVTitanDBConfig struct {
 type TiKVStorageConfig struct {
 	// +optional
 	EnableTtl *bool `json:"enable-ttl,omitempty" toml:"enable-ttl,omitempty"`
-  // +optional
-  TtlCheckPoolInterval *string `json:"ttl-check-poll-interval,omitempty" toml:"ttl-check-poll-interval,omitempty"`
+	// +optional
+	TtlCheckPoolInterval *string `json:"ttl-check-poll-interval,omitempty" toml:"ttl-check-poll-interval,omitempty"`
 	// +optional
 	MaxKeySize *int64 `json:"max-key-size,omitempty" toml:"max-key-size,omitempty"`
 	// Deprecated in v4.0.0

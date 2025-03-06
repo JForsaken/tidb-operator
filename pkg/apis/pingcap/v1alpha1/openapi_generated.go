@@ -13783,6 +13783,12 @@ func schema_pkg_apis_pingcap_v1alpha1_TiKVStorageConfig(ref common.ReferenceCall
 							Format: "",
 						},
 					},
+					"ttl-check-poll-interval": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
 					"max-key-size": {
 						SchemaProps: spec.SchemaProps{
 							Type:   []string{"integer"},

@@ -8658,6 +8658,11 @@ func (in *TiKVStorageConfig) DeepCopyInto(out *TiKVStorageConfig) {
 		*out = new(bool)
 		**out = **in
 	}
+	if in.TtlCheckPoolInterval != nil {
+		in, out := &in.TtlCheckPoolInterval, &out.TtlCheckPoolInterval
+		*out = new(string)
+		**out = **in
+	}
 	if in.MaxKeySize != nil {
 		in, out := &in.MaxKeySize, &out.MaxKeySize
 		*out = new(int64)
